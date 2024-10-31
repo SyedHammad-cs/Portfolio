@@ -1,0 +1,532 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  background-color: #eef4ed;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0b2545;
+  padding: 15px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  color: #ffffff;
+  box-sizing: border-box; /* Ensures padding is contained within navbar width */
+}
+
+/* Left section for name */
+.navbar-left h1 {
+  color: #ffffff;
+  margin: 0;
+  font-size: 1.5em;
+}
+
+/* Centered section for menu items */
+.navbar-center {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.navbar-center li a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.navbar-center li a:hover {
+  text-decoration: underline;
+}
+
+.navbar-center li a:focus {
+  text-decoration: underline;
+}
+
+.navbar-center li a:active {
+  text-decoration: underline;
+}
+
+.navbar-center li a:target {
+  text-decoration: underline;
+}
+.navbar-center li a:visited {
+  text-decoration: underline;
+}
+
+/* Right section for contact button */
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.contact-button {
+  background-color: #e44b81;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  margin-left: 20px; /* Adds space between the last link and the Contact button */
+}
+
+.contact-button:hover {
+  background-color: #a5053d;
+}
+
+/* Adjusting main content to avoid overlap */
+main {
+  padding-top: 80px;
+}
+
+/* Front Section Styles */
+.front-section {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center items vertically */
+  padding: 20px 20px; /* Adjusted padding */
+  /* background-color: #ffc8dd; Light background color */
+}
+
+.content-container {
+  display: flex; /* Use flexbox for inner content */
+  align-items: center; /* Center items vertically */
+  justify-content: flex-start; /* Align items to the left */
+  gap: 20px; /* Space between items */
+  width: 100%; /* Use full width of the section */
+}
+
+.profile-group {
+  display: flex;
+  gap: 0px;
+  justify-content: end;
+  width: 80%;
+}
+
+.social-links {
+  background-color: #0b2545;/* Dark background for capsule */
+  border-radius: 20px; /* Capsule shape */
+  padding: 10px; /* Adjusted padding for thickness */
+  display: flex; /* Use flex to arrange icons */
+  flex-direction: column; /* Stack icons vertically */
+  align-items: center; /* Center align icons */
+  position: fixed;
+}
+
+.social-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 5px 0; /* Space between icons */
+  font-size: 1.5em; /* Increase icon size for better visibility */
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #e44b81; /* Color change on hover */
+}
+
+.intro {
+  max-width: 600px; /* Set width for intro */
+  background-color: #fff; /* White background for intro */
+  padding: 10px 20px;
+  border-radius: 0 50px 50px 0; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  text-align: justify; /* Center text in the intro */
+}
+
+/* Button Styles */
+.view-cv-button {
+  display: inline-block;
+  margin-top: 15px; /* Space above the button */
+  padding: 10px 20px; /* Padding for the button */
+  background-color: #e44b81;/* Button background color */
+  color: #fff; /* Button text color */
+  text-decoration: none; /* Remove underline */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.view-cv-button:hover {
+  background-color: #a5053d;/* Darker shade on hover */
+}
+
+.right-section {
+  display: flex; /* Center the image vertically */
+  justify-content: center; /* Center the image horizontally */
+}
+
+.right-section img {
+  width: 100%; /* Responsive width */
+  max-width: 300px; /* Maximum width for the image */
+  border-radius: 50px 0px 0 50px ; /* Rounded corners */
+}
+
+/* About Section Styles */
+.about-section {
+  background-color: #f6eff2;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.about-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-section h2 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #555;
+  margin: 15px 0;
+  text-align: justify;
+}
+
+/* Education Section Styles */
+.education-section {
+  /* background-color: #f9f9f9; */
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.education-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.education-section h2 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.education-item {
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.education-item h3 {
+  font-size: 1.4em;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.education-item p {
+  font-size: 1em;
+  color: #555;
+  margin: 5px 0;
+}
+
+/* Skills Section Styles */
+.skills-section {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.skills-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.skills-container h2 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Skills Grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.skill-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+}
+
+.skill-card i {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.skill-card p {
+  font-size: 1em;
+  color: #555;
+  margin: 0;
+}
+
+/* Projects Section Styles */
+.projects-section {
+  padding: 40px 20px; /* Add padding to the section */
+  /* background-color: #f9f9f9; Light background color */
+  text-align: center; /* Center align text */
+}
+
+.projects-container {
+  max-width: 800px; /* Set maximum width for the container */
+  margin: 0 auto; /* Center the container */
+}
+
+.projects-container h2 {
+  font-size: 2em; /* Font size for the section title */
+  color: #333; /* Title color */
+  margin-bottom: 20px; /* Space below the title */
+}
+
+.project-grid {
+  display: grid; /* Use grid layout */
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 20px; /* Space between grid items */
+}
+
+.project-card {
+  background-color: #fff; /* White background for project cards */
+  padding: 20px; /* Padding inside cards */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  text-align: left; /* Left-align text inside cards */
+}
+
+.project-card h3 {
+  font-size: 1.5em; /* Font size for project titles */
+  color: #333; /* Title color */
+}
+
+.project-card p {
+  font-size: 1em; /* Font size for project descriptions */
+  color: #555; /* Description color */
+  margin: 10px 0; /* Space above and below descriptions */
+}
+
+.project-link {
+  display: inline-block; /* Display link as a block */
+  padding: 10px 15px; /* Padding for the link */
+  background-color: #e44b81;/* Button background color */
+  color: #fff; /* Button text color */
+  text-decoration: none; /* Remove underline */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.project-link:hover {
+  background-color: #a5053d; /* Darker shade on hover */
+}
+
+/* Certifications Section Styles */
+.certifications-section {
+    padding: 40px 20px; /* Add padding to the section */
+    background-color: #f9f9f9; /* Light background color */
+    text-align: center; /* Center align text */
+  }
+  
+  .certifications-container {
+    max-width: 800px; /* Set maximum width for the container */
+    margin: 0 auto; /* Center the container */
+  }
+  
+  .certifications-container h2 {
+    font-size: 2em; /* Font size for the section title */
+    color: #333; /* Title color */
+    margin-bottom: 20px; /* Space below the title */
+  }
+  
+  .certification-grid {
+    display: grid; /* Use grid layout */
+    grid-template-columns: 1fr; /* Single column layout */
+    gap: 20px; /* Space between grid items */
+  }
+  
+  .certification-card {
+    background-color: #fff; /* White background for certification cards */
+    padding: 20px; /* Padding inside cards */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .certificate-header {
+    display: flex; /* Use flexbox for header layout */
+    align-items: center; /* Center align items vertically */
+    margin-bottom: 10px; /* Space below the header */
+  }
+  
+  .certificate-image {
+    width: 100px; /* Fixed width for certificate image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners for the image */
+    margin-right: 20px; /* Space between image and text */
+  }
+  
+  .certificate-info {
+    text-align: left; /* Left-align text inside info */
+  }
+  
+  .certification-card h3 {
+    font-size: 1.5em; /* Font size for certification titles */
+    color: #333; /* Title color */
+    margin: 0; /* Remove margin for consistency */
+  }
+  
+  .date {
+    font-size: 1em; /* Font size for date */
+    color: #777; /* Date color */
+    margin: 5px 0; /* Space above and below date */
+  }
+  
+  .institute {
+    font-size: 1em; /* Font size for date */
+    color: #777; /* Date color */
+    margin: 5px 0; /* Space above and below date */
+  }
+  
+  .description {
+    font-size: 1em; /* Font size for description */
+    color: #555; /* Description color */
+    margin-top: 10px; /* Space above description */
+    text-align: justify;
+  }
+
+  .certification-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Aligns content to the left */
+}
+
+.view-certificate-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 16px;
+    background-color: #e44b81;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    width: auto;
+}
+
+.view-certificate-btn:hover {
+  background-color: #a5053d;
+}
+
+  
+
+  li {
+    position: relative; /* Set position to relative to position child elements */
+    padding: 10px; /* Add padding for spacing */
+}
+   .navbar li:last-child::before {
+        content: "\f35d"; /* Font Awesome Unicode for the icon */
+        font-family: "Font Awesome 6 Free"; /* Specify the Font Awesome font */
+        font-weight: 900; /* Use the solid style */
+        position: absolute; /* Position the icon absolutely */
+        top: 10px; /* Align to the top */
+        left: 75%; /* Align to the left */
+        font-size: 12px; /* Adjust size of the icon */
+        color: #ffffff; /* Change the color of the icon */
+    }
+    footer {
+        background-color: #f0f0f0; /* Light gray background */
+        text-align: center; /* Center the text */
+        padding: 10px; /* Add padding */
+        position: relative; /* Positioning context */
+        bottom: 0; /* Stick to the bottom */
+        width: 100%; /* Full width */
+    }
+    
+    footer p {
+        margin: 0; /* Remove default margin */
+        font-size: 14px; /* Adjust font size */
+        color: #333; /* Dark text color */
+    }
+    .contact-section {
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+  }
+  
+  .contact-section h2 {
+      text-align: center;
+      color: #606676;
+  }
+  
+  .form-group {
+      margin-bottom: 15px;
+  }
+  
+  label {
+      display: block;
+      font-weight: bold;
+      color: #606676;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+  }
+  
+  button {
+      width: 100%;
+      padding: 10px;
+      background-color: #e44b81;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #a5053d;
+  }
